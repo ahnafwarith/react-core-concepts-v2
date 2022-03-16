@@ -4,22 +4,31 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Person></Person>
+      <Person></Person>
+      {/* New Component */}
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
     </div>
   );
+}
+function Person(props) {
+  console.log(props)
+  return (
+    <div className='jhanku'>
+      <h1>Jhankar Mahmud</h1>
+      <p>Profession: Programmer</p>
+    </div>
+  )
+}
+function Friend() {
+  return (
+    <div style={{ backgroundColor: "blue", color: "white" }}>
+      <h1>Sakif</h1>
+      <p>Profession: Nibbatizer</p>
+    </div>
+  )
 }
 
 export default App;

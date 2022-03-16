@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.jhanku{
+  border: #61dafb 2px solid;
+  margin: 20px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 20px;
+}
+.sakif{
+  border: #282c34 2px solid;
+}
