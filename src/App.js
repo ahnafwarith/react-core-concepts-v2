@@ -7,9 +7,9 @@ function App() {
       <Person></Person>
       <Person></Person>
       {/* New Component */}
-      <Friend></Friend>
-      <Friend></Friend>
-      <Friend></Friend>
+      <Friend name="Jhanku" job="Saving Lives"></Friend>
+      <Friend name="Panku"></Friend>
+      <Friend name="Sir<3"></Friend>
     </div>
   );
 }
@@ -22,11 +22,12 @@ function Person(props) {
     </div>
   )
 }
-function Friend() {
+function Friend(props) {
+  console.log(props)
   return (
     <div style={{ backgroundColor: "blue", color: "white" }}>
-      <h1>Sakif</h1>
-      <p>Profession: Nibbatizer</p>
+      <h1>{props.name}</h1>
+      <p>Profession: {props.job}</p>
     </div>
   )
 }
